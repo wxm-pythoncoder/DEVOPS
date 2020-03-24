@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>hello world</p>
+    {% for sys in system_obj %}
+        <div><p>{{ sys.system }}</p></div>
+        <div><p>{{ sys.type }}</p></div>
+    {% endfor %}
+</body>
+</html>
