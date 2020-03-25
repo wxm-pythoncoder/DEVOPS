@@ -5,8 +5,11 @@ from .models import System,Performance
 
 
 def find_machine(request):
-    system_obj = System.objects.all()
-    for system in system_obj:
-        print(system.type)
-        print(system.system)
-    return render(request,'index.html',{"system_obj":system_obj})
+    performance_obj = Performance.objects.all()
+    return render(request,'index.html',{"performance_obj":performance_obj})
+
+def test1(request):
+    return render(request,'test.html')
+
+def test2(request):
+    return render(request,'test.html')
