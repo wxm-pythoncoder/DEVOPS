@@ -249,9 +249,10 @@ desired effect
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">导航栏</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="{% url 'machine:index' %}"><i class="fa fa-dashboard"></i> <span>机器</span></a></li>
-        <li><a href="{% url 'machine:test' %}"><i class="fa fa-table"></i> <span>资产总表</span></a></li>
-        <li><a href="{% url 'machine:test1' %}"><i class="fa fa-table"></i> <span>王小明测试</span></a></li>
+          <li><a href="{% url 'machine:dashboard' %}"><i class="fa fa-dashboard"></i> <span>仪表盘</span></a></li>
+        <li><a href="{% url 'machine:index' %}"><i class="fa fa-building"></i> <span>服务器资产</span></a></li>
+        <li><a href="{% url 'machine:machine' %}"><i class="fa fa-table"></i> <span>资产总表</span></a></li>
+
       </ul>
       <!-- /.sidebar-menu -->
     </section>

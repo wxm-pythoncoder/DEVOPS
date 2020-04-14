@@ -5,7 +5,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',  views.find_machine,name="index"),
-    path('test/',  views.test1,name="test"),
-    path('test1/',  views.test2,name="test1"),
+    path('machine/',  views.find_machine,name="machine"),
+    path('index/',  views.index,name="index"),
+    path('dashboard/',  views.dashboard,name="dashboard"),
+    path('detail/',  views.detail,name="detail"),
 ]
